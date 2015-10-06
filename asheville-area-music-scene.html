@@ -1,0 +1,72 @@
+<meta name="robots" content="none">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Rock+Salt" rel="stylesheet" type="text/css">
+<link href="/css/music.css" rel="stylesheet" media="all" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="/scripts/controllers/mainController.js"></script>
+<div ng-app="musicApp">
+	<div class="container" ng-controller="StoriesController">
+		<div class="row">
+			<div class="seven columns centered intro">
+				<h1>Asheville Area Music Scene</h1>
+				<p>Asheville’s music scene is born of age old traditions, nurtured by a spirit of independence and the muse of the mountain skyline. The embracing atmosphere reflects a sense of place, harmonic yet playfully divergent and diverse. In a scene that’s on the verge, Asheville’s talented wellspring of music lovers and creators offer the musically minded traveler multi-layered experiences, innovative sounds and the irresistible urge to move. Play on in, won’t you?</p>
+				<p> </p>
+			</div>
+		</div>
+
+		<div class="row" id="highlightsWrapper">
+			<ul class="nav three columns">
+				<li class="title">Highlights</li>
+				<li ng-repeat="story in stories | filter:{featured:'true'}">
+					<a ng-href="" ng-click="scrollTo(story,$index)">{{ story.title }}</a>
+				</li>
+			</ul>
+			<div id="highlights" ng-style="imagewrapper" class="nine columns">
+				<ul ng-style="listposition">
+					<li ng-repeat="story in stories | filter:{featured:'true'}" ng-style="imagewrapper">
+						<div ng-if="story.youtube" class="fluidmedia">
+							<iframe width="720" height="405" ng-src="{{ youtubeURL + story.youtube + youtubeOptions }}" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<img ng-if="!story.youtube" ng-src="{{ imageURL + story.image }}" />
+						<p class="caption"><strong>{{ story.title }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="row">
+			<div class="eight columns">
+				<h2 id="calendar">Music &amp; Festival Calendar</h2>
+				<sv:widget type="events" width="100" height="100"><sv:param name="action" value="showall"></sv:param><sv:param name="randomnum" value="0"></sv:param><sv:param name="catid" value="9,12"></sv:param></sv:widget>
+			</div>
+			<div class="four columns">
+				<div id="booking">
+					<script src="http://arestravel.com/js/_default/ARESbot.js?bundle=ashevillecvb&nc=1&tpl=widget" type="text/javascript"></script>
+				</div>
+				<div id="soundcloudPlayer">
+					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/79785478&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</div>
+		</div>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="row">
+			<div class="twelve columns">
+				<ul class="twelve columns block-grid three-up">
+					<li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1" >
+						<a title="Continue Reading..." href="" ng-href="{{ story.URL }}" class="widget {{ story.type }}">
+							<h4 class="title"><span class="icon-arrow-left"></span>{{ story.type }}<span class="icon-arrow-right"></span></h4>
+							<img ng-src="{{ imageURL + story.image }}">
+							<h3 class="subhead">{{ story.title }}</h3>
+							<p class="caption">{{ story.caption | limitTo:100 }}...</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+<script src="/scripts/music.js" type="text/javascript"></script>

@@ -1,0 +1,775 @@
+/*----------------------------override template------------------------------*/
+
+#wrapperinner{
+	background: none !important;
+}
+html{
+	background: #ffffff;
+}
+body, html,
+#music body, #music html{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Lato', Verdana, sans-serif !important;
+}
+#slideshow{
+	background: url(/includes/images/music/paper-textured-background.jpg) !important;
+	/* background-size: cover !important; */
+	background-repeat: repeat;
+	height: auto !important;
+}
+#leaves,
+.navWrapper,
+.events-rss-link,
+.filterHolder,
+.widget-title,
+#wrapperMainImg,
+.slideshow_backdrop{
+	display: none !important;
+}
+#wrapperadjustposition,
+#wrapperContent{
+	padding: 0 !important;
+}
+#wrapperPage{
+	margin-top: 0 !important;
+}
+#wrapper{
+	background-color: rgba(255,255,255, 0);
+}
+#c4.row,
+#c4 .row,
+#wrapperFooter,
+#wrapperinner,
+#wrapperadjustposition{
+	width: auto !important;
+	max-width: 100% !important;
+}
+#wrapperPage{
+	margin: 2rem 10rem 0 !important;
+	width: 80%;
+	width: calc(100% - 20rem);
+	min-width: 64rem;			/* 1024/16 */
+}
+.row .row{
+	padding: 0 0 0 0 !important;
+}
+.column,
+.columns {
+	padding: 0 4rem 0 0;
+}
+#wrapperFooter{
+	background-color: transparent;
+	min-width: 29.375rem;			/* 470/16 */
+	margin: 0 auto;
+	padding: 0 2.5rem 2.5rem;		/* 40/16 */
+}
+.footertext ul,
+.itineraryHolder,
+.livechat-holder{
+	font-size: .65rem !important;
+}
+a:hover img.imgshadow,
+a:focus img.imgshadow{
+	background-color: transparent;
+	top: auto;
+	box-shadow: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Lato', "HelveticaLTStdCondensed", Helvetica, Arial, Verdana;
+	font-weight: 700 !important;
+	line-height: initial;
+	text-transform: capitalize;
+}
+br.clear {
+	line-height: 2rem;
+}
+
+/*----------------------------override template END------------------------------*/
+/*----------------------------override template END------------------------------*/
+/*----------------------------override template END------------------------------*/
+/*----------------------------override template END------------------------------*/
+/*----------------------------override template END------------------------------*/
+
+h1{
+	font-size: 3rem;				/* 48/16 */
+	font-weight: 300 !important;
+	font-style: italic;
+}
+h2{
+	font-weight: 300 !important;
+	font-size: 3.125rem;			/* 50/16 */
+}
+h2.alternate{
+	font-family: 'Rock Salt', cursive !important;
+	font-size: 5rem !important;		/* 80/16 */
+}
+h3{
+	font-size: 1.25rem;				/* 20/16 */
+}
+h4{
+	font-size: 1.25rem;				/* 20/16 */
+	font-style: italic;
+}
+h5{
+	font-size: 1.75rem;				/* 28/16 */
+}
+h6{
+	font-size: 4.8125rem;			/* 77/16 */
+	font-style: italic;
+}
+
+.intro p{
+	font-size: 1.25rem;				/* 20/16 */
+}
+button, textarea, input, select, .button{
+	border-radius: 0 !important;
+	outline: 0 !important;
+}
+
+/*----------------------------event calendar------------------------------*/
+
+.evnt-nav,
+.searchOptions,
+.evnt-listing,
+#l-mainContent,
+.imgshadow{
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border: none !important;
+}
+.evnt-nav{
+	margin: 0;
+	padding: 0;
+}
+.evnt-jumpHolder{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	max-width: 60%;
+	height: auto;
+}
+.evnt-tabHolder{
+	max-width: 40%;
+	padding: 0;
+	height: auto;
+	width: auto;
+}
+.searchOptions{
+	margin: 0;
+	padding: 0;
+}
+.searchOptions form{
+	margin: 0;
+	box-shadow: 0 .125rem .125rem -.125rem rgba(0, 0, 0, 0.2);
+	padding: 0 0 1rem 0;
+}
+#l-mainContent{
+	overflow-y: auto;
+	max-height: 24.25rem;
+	padding-bottom: 2.5rem;
+}
+#l-mainContent .evnt-listing{
+	margin: 0 0 1rem 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+#l-mainContent .evnt-content{
+	width: 100%;
+}
+#l-mainContent .evnt-content h3,
+#l-mainContent h3 a {
+	font-size: 1.5rem;
+	text-align: left;
+}
+.evnt-content .detail a{
+	background: none;
+	width: auto;
+	height: auto;
+	bottom: auto;
+	left: auto;
+}
+.evnt-content .detail span{
+	height: 2rem;
+	line-height: 2rem;
+	font-weight: 400;
+	color: #f0f0e6;
+	display: block !important;
+	padding: 0 1rem;
+}
+.evnt-listing .linksHolder{
+	width: 100% !important;
+	padding-left: 6.875rem !important;
+}
+.evnt-listing .linksHolder li a,
+.evnt-content .detail span{
+	font-family: "Lato", 'HelveticaLTStdBoldCondensed', sans-serif;
+	text-transform: capitalize;
+}
+.evnt-listing-content{
+	padding: 1rem 0 0 0;
+}
+#l-mainContent .catHeading{
+	display: block !important;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255, 0.5) !important;
+	color: rgba(255,255,255, 0) !important;
+	z-index: 99;
+	margin: 0 4rem 0 0;
+	padding: 1rem 0;
+	font-family:'Glyphicons Halflings';
+	font-size: 0;
+	cursor: pointer;
+	box-shadow: 0 -.125rem .125rem -.125rem rgba(0, 0, 0, 0.1);
+	text-align:center;
+}
+#l-mainContent .catHeading:after{
+	content:"\e114";
+	color: #b71234;
+	font-size: 1rem;
+	font-weight:700;
+	text-align:center;
+}
+.evnt-listing-content p{
+	font-size: inherit;
+	line-height: inherit;
+}
+h2#calendar{
+	background-color: #165788;
+	color: #f0f0e6;
+	margin: 0;
+	text-align: center;
+	display: block;
+	padding: 1rem 0;
+	margin: 0 0 1rem 0;
+}
+
+/*----------------------------package widget------------------------------*/
+
+.scrollBg {
+	background: none !important;
+	display: none !important;
+	width: auto;
+	height: auto;
+	position: static;
+	overflow: hidden;
+	z-index: auto;
+	right: auto;
+}
+.couponsScroller{
+	background: none;
+	position: static;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: rgba(255,255,255, 0.75);
+}
+.couponsScroller .scrollable{
+	width: 100% !important;
+	max-width: 100% !important;
+	overflow: hidden;
+	margin: 0;
+	top: 0;
+	height: calc(100% - 5.3125rem);
+	overflow-y: auto;
+}
+.couponsScroller .scrollable .items{
+	width: auto !important;
+	max-width: 100% !important;
+}
+.couponsScroller .item-img-frame .item-img-matting img{
+	padding: 0;
+	width: 100%;
+	max-width: 100% !important;
+	margin: 0 auto;
+	max-height: none !important;
+}
+.couponsScroller-head{
+	margin: 0;
+	position: static;
+	z-index: 0;
+}
+.couponsScroller .widget-title{
+	display: block !important;
+	text-shadow: none;
+	color: #f0f0e6;
+	background-color: #165788;
+	letter-spacing: 0;
+	font-family: 'Lato', "HelveticaLTStdCondensed", Helvetica, Arial, Verdana;
+	font-weight: 700 !important;
+	line-height: initial;
+	text-transform: capitalize;
+	padding: .5rem 0;
+	margin: 0;
+}
+.couponsScroller-content{
+	width: auto;
+	overflow: hidden;
+	margin: 0;
+	top: 0;
+	padding: 0;
+}
+.couponsScroller-item{
+	height: auto !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	top: 0 !important;
+	padding: 0;
+	clear: both;
+	margin-bottom: 1rem !important;
+}
+.couponsScroller .item-img-frame{
+	display: block;
+	width: auto;
+	height: auto;
+	position: static;
+	width: auto !important;
+	max-width: 100% !important;
+}
+.couponsScroller .item-content{
+	position: static;
+	left: auto;
+	bottom: auto;
+	z-index: auto;
+	width: auto;
+	max-width: 100%;
+}
+.couponsScroller .item-content .item-title{
+	font-size: 1rem;
+	margin: 0;
+	padding: .5rem;
+}
+.couponsScroller .item-content .item-desc{
+	font-size: .85rem;
+	margin: 0;
+	padding: 0 .5rem;
+	display: block;
+}
+.couponsScroller .item-content .item-linkHolder{
+	font-size: 1rem;
+	margin: 0;
+	padding: 0 .5rem;
+	display: block;
+	font-weight: 700;
+}
+.couponsScroller-foot {
+	text-align: center;
+	position: static;
+	background-color: #165788;
+	margin-top: 0;
+}
+.couponsScroller-foot a {
+	position: static;
+	bottom: auto;
+	color: #f0f0e6;
+	font-size: .75rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.couponsScroller .interfaceNav{
+	background-image: none;
+	font-family:'Glyphicons Halflings';
+	color: #b71234;
+	width: 1.5rem;
+	text-align: center;
+	font-size: 1.125rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	bottom: 0;
+	font-size: 1rem;
+	right: 1rem;
+	left: 0;
+	width: auto;
+	background-color: rgba(255,255,255, 0.5) !important;
+	box-shadow: 0 -.25rem .125rem -.125rem rgba(0, 0, 0, 0.2);
+}
+.couponsScroller .prev{
+	left: 0;
+	display: none;
+}
+.couponsScroller .prev:before{
+	content:"\e079";
+}
+.couponsScroller .next:before{
+	content:"\e114";
+}
+.couponsScroller .interfaceNav.disabled{
+	color: rgba(183,18,52,.5);
+}
+couponsScroller .loading-img{
+	display: none !important;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*----------------------------booking engine------------------------------*/
+#booking h3{
+	background-color: rgba(255,255,255, 0.85);
+	margin: 0;
+}
+#tabsWrap{
+	max-width: 100% !important;
+	width: 100% !important;
+}
+#aresHeader{
+	display: none !important;
+}
+#aresTabs{
+	width: 100% !important;
+	left: 0 !important;
+	height: auto !important;
+	background: rgba(0, 0, 0, 0) !important;
+}
+#aresTabs li{
+	width: 25% !important;
+	width: calc(25% - 5px) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center !important;
+	border: none !important;
+	float: none !important;
+	display: inline-block !important;
+	height: 2.5rem !important;
+	line-height: 2.5rem !important;
+}
+#aresTabs li.active{
+	background-color: rgba(0, 0, 0, 0) !important;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzkyIDEwOS45IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3OTIgMTA5LjkiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBvbHlnb24gZmlsbD0iIzE3NTg4OSIgcG9pbnRzPSI1NS42LDg4IDg4LjQsNTUgNTUuNiwyMiAwLjQsMjIgMzMuNCw1NSAwLjQsODggCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiMxNzU4ODkiIHBvaW50cz0iNjQ5LjEsMCA2MDIuOSwzMyAxNjUuNSwzMyAxMzIuNywwIDQ0LjQsMCA5OS40LDU1IDQ0LjQsMTA5LjkgMTMyLjcsMTA5LjkgMTY1LjUsNzcgNjAyLjksNzcgDQoJCTY0OS4xLDEwOS45IDc5Miw1NSAJIi8+DQo8L2c+DQo8L3N2Zz4NCg==') !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom center !important;
+}
+#aresTabs a{
+	text-shadow: none !important;
+	display: block !important;
+	padding: 0 !important;
+	color: #4d4d4f !important;
+	font-weight: 700 !important;
+	font-style: italic !important;
+	font-family: "Lato", sans-serif !important;
+}
+#aresTabs .active a{
+	color: #165788 !important;
+}
+#aresContent{
+	width: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: .5rem !important;
+}
+#aresContent ul,
+#aresContent label{
+	font-family: "Lato", sans-serif !important;
+}
+#aresContent ul{
+	margin: 0 !important;
+	padding: .5rem 0 !important;
+}
+#aresContent ul li{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#tabsWrap .aresDates li,
+#aresContent select.aresFlightTime,
+#aresContent #flights .aresDatepicker{
+	width: 50% !important;
+}
+#aresContent .numbers li{
+	width: 33% !important;
+	width: calc( 100% / 3 ) !important;
+}
+#aresContent .aresBookText,
+#aresContent li.aresCenter,
+.aresLast li{
+	width: 100% !important;
+}
+#aresContent input[type="text"],
+#aresContent select{
+	font-family: 'Lato', sans-serif !important;
+	width: 100% !important;
+	padding: 0 .5rem !important;
+	margin: 0 !important;
+	background: #ffffff !important;
+}
+.aresLast{
+	display: none !important;
+}
+
+/*----------------------------button tabs------------------------------*/
+.container {
+	opacity: 0;
+	transition: opacity .5s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.container.ng-scope{
+	opacity: 1;
+}
+#highlightsWrapper {
+	background-color: rgba(183,18,52,.95);
+}
+#highlightsWrapper .nav {
+	list-style-type: none;
+	display: block;
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+#highlightsWrapper .nav .title{
+	text-align: center;
+	color: #F0F0E6;
+	margin: 0;
+	padding: 2rem;
+	font-size: 2rem;
+}
+#highlightsWrapper .nav li{
+	display:block;
+}
+#highlightsWrapper .nav li a{
+	color: #F0F0E6;
+	padding: 1rem;
+	display: block;
+	transition: all 0.55s cubic-bezier(0.25, 0.8, 0.25, 1);
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	text-align: center;
+}
+#highlightsWrapper .nav li a:hover{
+	color: #eeaf30;
+	cursor: pointer;
+	background-color: #981e32;
+}
+#highlightsWrapper .nav li a:active{
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	border-top: 1px solid rgba(0,0,0,.05);
+	background-color: rgba(0,0,0,.1);
+}
+#highlights{
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;;
+	background-color: #F0F0E6;
+	background: url(http://www.exploreasheville.com/includes/images/music/paper-textured-background.jpg) !important;
+}
+#highlights ul {
+	list-style-type: none;
+	transition: all .5s cubic-bezier(0.35, 0, 0.25, 1);
+	margin: 0;
+	padding: 0;
+}
+#highlights ul li{
+	margin: 0 !important;
+	display: block;
+	float: left;
+}
+#highlights ul li .caption {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	background-color: transparent;
+	height: auto;
+	width: 100%;
+	margin: 0;
+	padding: 1rem;
+	display: block;
+	overflow: hidden;
+	font-size: 1rem;
+}
+#highlights ul li img,
+#highlights ul li iframe {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+}
+
+
+/*----------------------------100% height iframes------------------------------*/
+
+.fluidmedia {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 1.5625rem;
+	height: 0;
+}
+.fluidmedia iframe,
+.fluidmedia embed,
+.fluidmedia object {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+/*
+
+.equalheight iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+*/
+
+/*----------------------------widgets------------------------------*/
+
+.widget{
+	margin: 0 0 0 0;
+	position: relative;
+	display: block;
+}
+.widget .title{
+	text-align: center;
+	height: 2.5rem;
+	background: url(http://www.exploreasheville.com/includes/images/music/paper-textured-background.jpg) !important;
+	text-transform: lowercase;
+	font-style: italic;
+	padding: .5rem 0;
+	margin: 0;
+}
+.widget img{
+	max-width: 100%;
+	margin: 0 0 .5rem 0;
+}
+.widget .subhead{
+	padding: .5rem 0 0 0;
+}
+.widget .caption{
+	font-size: .875rem;
+	color: #766a65;
+	font-style: italic;
+}
+.widget.story .title,
+.widget.story .subhead{
+	color: #b71234;
+}
+.widget.itinerary .title,
+.widget.itinerary .subhead{
+	color: #165788;
+}
+.widget.deal .title,
+.widget.deal .subhead{
+	color: #eeaf30;
+}
+.widget.event .title,
+.widget.event .subhead{
+	color: #90986b;
+}
+.widget.event .date{
+	color: #ffffff;
+	display: block;
+	position: absolute;
+	top: 2.5rem;
+	left: 0;
+	margin-top: -1px;
+}
+.widget.event .date .day{
+	padding: .25rem;
+	background-color: #90986b;
+}
+.widget.event .date .month{
+	padding: .25rem;
+	background-color: #766a65;
+}
+
+/*----------------------------icons------------------------------*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/new-icons/icomoon.eot?85km67');
+	src:url('fonts/new-icons/icomoon.eot?#iefix85km67') format('embedded-opentype'),
+		url('fonts/new-icons/icomoon.ttf?85km67') format('truetype'),
+		url('fonts/new-icons/icomoon.woff?85km67') format('woff'),
+		url('fonts/new-icons/icomoon.svg?85km67#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 0;
+	font-size: 2.5rem;
+	display: inline-block;
+	vertical-align: middle;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-large-button-1:before {
+	content: "\e600";
+}
+.icon-large-button-2:before {
+	content: "\e601";
+}
+.icon-medium-button-1:before {
+	content: "\e602";
+}
+.icon-nav-dropdown-photo-bg:before {
+	content: "\e603";
+}
+.icon-nav-dropdown-top-bar:before {
+	content: "\e604";
+}
+.icon-play-button:before {
+	content: "\e605";
+}
+.icon-small-button-1:before {
+	content: "\e606";
+}
+.icon-small-button-2:before {
+	content: "\e607";
+}
+.icon-text-box-border:before {
+	content: "\e608";
+}
+.icon-text-box-border-small:before {
+	content: "\e609";
+}
+.icon-arrow-left:before {
+	content: "\e60a";
+}
+.icon-arrow-right:before {
+	content: "\e60b";
+}
+
+/*----------------------------SoundCloud------------------------------*/
+
+#soundcloudPlayer .g-shadow-inset{
+	box-shadow: none !important;
+}
+#soundcloudPlayer .widget{
+	border-radius: 0 !important;
+	border: 0 !important;
+}
+
+/*----------------------------Angular------------------------------*/
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
