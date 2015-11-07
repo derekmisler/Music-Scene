@@ -3,32 +3,32 @@
 <html>
 
   <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Music Scene App | This project is maintained by Derek Misler.</title>
-	<meta name="description" content="">
-	
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic|Playfair+Display:700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="http://derekmisler.github.io/css/main.css">
-	<link rel="canonical" href="http://derekmisler.github.io/music-scene">
-	<link rel="alternate" type="application/rss+xml" title="Selected Works" href="http://derekmisler.github.io/feed.xml">
+  <title>Music Scene App | This project is maintained by Derek Misler.</title>
+  <meta name="description" content="">
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic|Playfair+Display:700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://derekmisler.github.io/css/main.css">
+  <link rel="canonical" href="http://derekmisler.github.io/music-scene">
+  <link rel="alternate" type="application/rss+xml" title="Selected Works" href="http://derekmisler.github.io/feed.xml">
 </head>
 
 
   <body>
 
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2C864"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-N2C864');</script>
-	<!-- End Google Tag Manager -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2C864"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N2C864');</script>
+  <!-- End Google Tag Manager -->
 
 
     <header class="site-header">
@@ -37,9 +37,9 @@
 
     <h1 class="site-title">
     <a href="http://derekmisler.github.io">
-    
+
       Music Scene App
-    
+
     </a>
     </h1>
   </div>
@@ -54,13 +54,13 @@
 
     <div class="page-content">
       <div class="wrapper">
-      
+
         <div class="description">
           <p>This was an Angular app built to overcome limitations in the CMS. It pulls in editorial content into the randomly-sorted widgets. The design of the widgets eventually became the inspiration for the widgets in the new ExploreAsheville.com.<br>
           <strong>Tools Utilized:</strong> Angular,jQuery,HTML5/CSS3</p>
-          
+
           <h4 class="site-project-link"><a href="https://github.com/derekmisler/music-scene" target="_blank">View this project on GitHub</a></h4>
-          
+
         </div>
 
 
@@ -84,53 +84,51 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="/scripts/controllers/mainController.js"></script>
 <div ng-app="musicApp">
-	<div class="container" ng-controller="StoriesController">
-		<div class="wrapper">
-			<div class="columns-12 intro">
-				<h1>Asheville Area Music Scene</h1>
-				<p>Asheville’s music scene is born of age old traditions, nurtured by a spirit of independence and the muse of the mountain skyline. The embracing atmosphere reflects a sense of place, harmonic yet playfully divergent and diverse. In a scene that’s on the verge, Asheville’s talented wellspring of music lovers and creators offer the musically minded traveler multi-layered experiences, innovative sounds and the irresistible urge to move. Play on in, won’t you?</p>
-				<p> </p>
-			</div>
-		</div>
+  <div class="container" ng-controller="StoriesController">
+    <div class="wrapper">
+      <div class="columns-12 intro">
+        <h1>Asheville Area Music Scene</h1>
+        <p>Asheville’s music scene is born of age old traditions, nurtured by a spirit of independence and the muse of the mountain skyline. The embracing atmosphere reflects a sense of place, harmonic yet playfully divergent and diverse. In a scene that’s on the verge, Asheville’s talented wellspring of music lovers and creators offer the musically minded traveler multi-layered experiences, innovative sounds and the irresistible urge to move. Play on in, won’t you?</p>
+        <p> </p>
+      </div>
+    </div>
 
-		<div class="wrapper" id="highlightsWrapper">
-			<ul class="nav columns-3">
-				<li class="title">Highlights</li>
-				<li ng-repeat="story in stories | filter:{featured:'true'}">
-					<a ng-href="" ng-click="scrollTo(story,$index)">{{ story.title }}</a>
-				</li>
-			</ul>
-			<div id="highlights" ng-style="imagewrapper" class="columns-9">
-				<ul ng-style="listposition">
-					<li ng-repeat="story in stories | filter:{featured:'true'}" ng-style="imagewrapper">
-						<div ng-if="story.youtube" class="fluidmedia">
-							<iframe width="960" height="405" ng-src="{{ youtubeURL + story.youtube + youtubeOptions }}" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<img ng-if="!story.youtube" ng-src="{{ imageURL + story.image }}" />
-						<p class="caption"><strong>{{ story.title }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
-					</li>
-				</ul>
-			</div>
-		</div>
-		
-		<br class="clear" />
-		
-		<div class="wrapper">
-			<div class="columns-12">
-				<ul class="columns-12 block-grid-3">
-					<li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1" >
-						<a title="Continue Reading..." href="" ng-href="{{ story.URL }}" class="widget {{ story.type }}">
-							<h4 class="title"><span class="icon-arrow-left"></span>{{ story.type }}<span class="icon-arrow-right"></span></h4>
-							<img ng-src="{{ imageURL + story.image }}">
-							<h3 class="subhead">{{ story.title }}</h3>
-							<p class="caption">{{ story.caption | limitTo:100 }}...</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+    <div class="wrapper" id="highlightsWrapper">
+      <ul class="nav columns-3">
+        <li class="title">Highlights</li>
+        <li ng-repeat="story in stories | filter:{featured:'true'}">
+          <a ng-href="" ng-click="scrollTo(story,$index)">{{ story.title }}</a>
+        </li>
+      </ul>
+      <div id="highlights" ng-style="imagewrapper" class="columns-9">
+        <ul ng-style="listposition">
+          <li ng-repeat="story in stories | filter:{featured:'true'}" ng-style="imagewrapper">
+            <div ng-if="story.youtube" class="fluidmedia">
+              <iframe width="960" height="405" ng-src="{{ youtubeURL + story.youtube + youtubeOptions }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img ng-if="!story.youtube" ng-src="{{ imageURL + story.image }}" />
+            <p class="caption"><strong>{{ story.title }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-	</div>
+    <br class="clear" />
+
+    <div class="wrapper">
+      <ul class="block-grid-3">
+        <li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1" >
+          <a title="Continue Reading..." href="" ng-href="{{ story.URL }}" class="widget {{ story.type }}">
+            <h4 class="title"><span class="icon-arrow-left" ng-include="'/images/icon-arrow-left.svg'"></span>{{ story.type }}<span class="icon-arrow-right" ng-include="'/images/icon-arrow-right.svg'"></span></h4>
+            <img ng-src="{{ imageURL + story.image }}">
+            <h3 class="subhead">{{ story.title }}</h3>
+            <p class="caption">{{ story.caption | limitTo:100 }}...</p> 
+            <button class="theme-small" type="button">read more</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 
@@ -178,18 +176,18 @@
 
     <footer class="site-footer">
 
-	<div class="wrapper">
-		<div class="columns-4">
-			<ul class="contact-list">
-				
-				<li>
-					<a href="mailto:derekmisler@gmail.com">derekmisler@gmail.com</a>
-				</li>
-				
+  <div class="wrapper">
+    <div class="columns-4">
+      <ul class="contact-list">
 
-				
-				<li>
-					<a href="https://www.linkedin.com/in/derekmisler"><span class="icon icon--linkedin"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <li>
+          <a href="mailto:derekmisler@gmail.com">derekmisler@gmail.com</a>
+        </li>
+
+
+
+        <li>
+          <a href="https://www.linkedin.com/in/derekmisler"><span class="icon icon--linkedin"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
     <title>Slice 1</title>
@@ -200,16 +198,16 @@
     </g>
 </svg></span><span class="username">&nbsp;derekmisler</span></a>
 
-				</li>
-				
-			</ul>
-		</div>
+        </li>
 
-		<div class="columns-8">
-			<p><a href="http://www.derekmisler.com" target="_blank">Derek is a front-end developer with a design background and over 10 years of experience.  He is also available for hire. Click here to learn more.
+      </ul>
+    </div>
+
+    <div class="columns-8">
+      <p><a href="http://www.derekmisler.com" target="_blank">Derek is a front-end developer with a design background and over 10 years of experience.  He is also available for hire. Click here to learn more.
 </a></p>
-		</div>
-	</div>
+    </div>
+  </div>
 
 </footer>
 

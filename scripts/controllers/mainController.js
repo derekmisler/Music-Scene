@@ -60,7 +60,7 @@ app.controller("StoriesController", function($scope) {
 			URL: "http://www.exploreasheville.com/see-do/music/music-shopping/",
 			subhead: "Check out Asheville music stores.",
 			featured: false,
-			type: "story"
+			type: "deal"
 		},
 		{
 			title: "Evolution of Mountain Music",

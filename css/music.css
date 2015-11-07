@@ -45,6 +45,8 @@ h6{
 button, textarea, input, select, .button{
   border-radius: 0 !important;
   outline: 0 !important;
+  background-color: transparent;
+  border: none !important;
 }
 .container a{
   color: #165788;
@@ -147,6 +149,39 @@ button, textarea, input, select, .button{
 
 /*----------------------------widgets------------------------------*/
 
+.icon-arrow-left,
+.icon-arrow-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+}
+.icon-arrow-left svg,
+.icon-arrow-right svg {
+  width: 30px;
+}
+button.theme-small,
+button.theme-large {
+  display: inline-block;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  color: #ffffff;
+}
+button.theme-large {
+  width: 195px;
+  height: 48px;
+  -webkit-mask: url(../images/button-large.svg) no-repeat 50% 50%;
+  mask: url(../images/button-large.svg)) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+button.theme-small {
+  width: 120px;
+  height: 36px;
+  -webkit-mask: url(../images/button-small.svg) no-repeat 50% 50%;
+  mask: url(../images/button-small.svg)) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
 .widget{
   margin: 0 0 0 0;
   position: relative;
@@ -176,17 +211,41 @@ button, textarea, input, select, .button{
 .widget.story .subhead{
   color: #b71234;
 }
+.widget.story svg path{
+  fill: #b71234;
+}
+.widget.story button{
+  background-color: #b71234;
+}
 .widget.itinerary .title,
 .widget.itinerary .subhead{
   color: #165788;
+}
+.widget.itinerary svg path{
+  fill: #165788;
+}
+.widget.itinerary button{
+  background-color: #165788;
 }
 .widget.deal .title,
 .widget.deal .subhead{
   color: #eeaf30;
 }
+.widget.deal svg path{
+  fill: #eeaf30;
+}
+.widget.deal button{
+  background-color: #eeaf30;
+}
 .widget.event .title,
 .widget.event .subhead{
   color: #90986b;
+}
+.widget.event svg path{
+  fill: #90986b;
+}
+.widget.event button{
+  background-color: #90986b;
 }
 .widget.event .date{
   color: #ffffff;
@@ -203,27 +262,6 @@ button, textarea, input, select, .button{
 .widget.event .date .month{
   padding: .25rem;
   background-color: #766a65;
-}
-
-/*----------------------------icons------------------------------*/
-
-
-.icon arrow,
-.icon-arrow-left,
-.icon-arrow-right {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0) !important;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzkyIDEwOS45IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3OTIgMTA5LjkiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBvbHlnb24gZmlsbD0iIzE3NTg4OSIgcG9pbnRzPSI1NS42LDg4IDg4LjQsNTUgNTUuNiwyMiAwLjQsMjIgMzMuNCw1NSAwLjQsODggCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiMxNzU4ODkiIHBvaW50cz0iNjQ5LjEsMCA2MDIuOSwzMyAxNjUuNSwzMyAxMzIuNywwIDQ0LjQsMCA5OS40LDU1IDQ0LjQsMTA5LjkgMTMyLjcsMTA5LjkgMTY1LjUsNzcgNjAyLjksNzcgDQoJCTY0OS4xLDEwOS45IDc5Miw1NSAJIi8+DQo8L2c+DQo8L3N2Zz4NCg==') !important;
-  background-repeat: no-repeat !important;
-  background-position: bottom center !important;
-}
-
-.icon-arrow-left {
-  background-position: bottom center !important;
-}
-.icon-arrow-right {
-  background-position: bottom center !important;
 }
 
 /*----------------------------SoundCloud------------------------------*/
