@@ -1,87 +1,10 @@
-/*----------------------------override template------------------------------*/
-
-#wrapperinner{
-	background: none !important;
-}
-html{
-	background: #ffffff;
-}
-body, html,
-#music body, #music html{
-	font-size: 16px;
-	font-weight: 400;
-	font-family: 'Lato', Verdana, sans-serif !important;
-}
-#slideshow{
-	background: url(/includes/images/music/paper-textured-background.jpg) !important;
-	/* background-size: cover !important; */
-	background-repeat: repeat;
-	height: auto !important;
-}
-#leaves,
-.navWrapper,
-.events-rss-link,
-.filterHolder,
-.widget-title,
-#wrapperMainImg,
-.slideshow_backdrop{
-	display: none !important;
-}
-#wrapperadjustposition,
-#wrapperContent{
-	padding: 0 !important;
-}
-#wrapperPage{
-	margin-top: 0 !important;
-}
-#wrapper{
-	background-color: rgba(255,255,255, 0);
-}
-#c4.row,
-#c4 .row,
-#wrapperFooter,
-#wrapperinner,
-#wrapperadjustposition{
-	width: auto !important;
-	max-width: 100% !important;
-}
-#wrapperPage{
-	margin: 2rem 10rem 0 !important;
-	width: 80%;
-	width: calc(100% - 20rem);
-	min-width: 64rem;			/* 1024/16 */
-}
-.row .row{
-	padding: 0 0 0 0 !important;
-}
-.column,
-.columns {
-	padding: 0 4rem 0 0;
-}
-#wrapperFooter{
-	background-color: transparent;
-	min-width: 29.375rem;			/* 470/16 */
-	margin: 0 auto;
-	padding: 0 2.5rem 2.5rem;		/* 40/16 */
-}
-.footertext ul,
-.itineraryHolder,
-.livechat-holder{
-	font-size: .65rem !important;
-}
-a:hover img.imgshadow,
-a:focus img.imgshadow{
-	background-color: transparent;
-	top: auto;
-	box-shadow: none;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6{
-	font-family: 'Lato', "HelveticaLTStdCondensed", Helvetica, Arial, Verdana;
+	font-family: 'Lato', Helvetica, Arial, Verdana;
 	font-weight: 700 !important;
 	line-height: initial;
 	text-transform: capitalize;
@@ -89,12 +12,6 @@ h6{
 br.clear {
 	line-height: 2rem;
 }
-
-/*----------------------------override template END------------------------------*/
-/*----------------------------override template END------------------------------*/
-/*----------------------------override template END------------------------------*/
-/*----------------------------override template END------------------------------*/
-/*----------------------------override template END------------------------------*/
 
 h1{
 	font-size: 3rem;				/* 48/16 */
@@ -106,7 +23,6 @@ h2{
 	font-size: 3.125rem;			/* 50/16 */
 }
 h2.alternate{
-	font-family: 'Rock Salt', cursive !important;
 	font-size: 5rem !important;		/* 80/16 */
 }
 h3{
@@ -210,7 +126,7 @@ button, textarea, input, select, .button{
 }
 .evnt-listing .linksHolder li a,
 .evnt-content .detail span{
-	font-family: "Lato", 'HelveticaLTStdBoldCondensed', sans-serif;
+	font-family: "Lato", sans-serif;
 	text-transform: capitalize;
 }
 .evnt-listing-content{
@@ -308,7 +224,7 @@ h2#calendar{
 	color: #f0f0e6;
 	background-color: #165788;
 	letter-spacing: 0;
-	font-family: 'Lato', "HelveticaLTStdCondensed", Helvetica, Arial, Verdana;
+	font-family: 'Lato', Helvetica, Arial, Verdana;
 	font-weight: 700 !important;
 	line-height: initial;
 	text-transform: capitalize;
@@ -565,7 +481,6 @@ couponsScroller .loading-img{
 	float: left;
 	overflow: hidden;;
 	background-color: #F0F0E6;
-	background: url(http://www.exploreasheville.com/includes/images/music/paper-textured-background.jpg) !important;
 }
 #highlights ul {
 	list-style-type: none;
@@ -640,7 +555,6 @@ couponsScroller .loading-img{
 .widget .title{
 	text-align: center;
 	height: 2.5rem;
-	background: url(http://www.exploreasheville.com/includes/images/music/paper-textured-background.jpg) !important;
 	text-transform: lowercase;
 	font-style: italic;
 	padding: .5rem 0;
