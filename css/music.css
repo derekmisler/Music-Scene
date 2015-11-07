@@ -121,6 +121,9 @@ button, textarea, input, select, .button{
   display: block;
   float: left;
 }
+#highlights ul li img{
+  width: 100%;
+}
 #highlights ul li .caption {
   margin: 0;
   padding: 1rem;
@@ -159,14 +162,14 @@ button, textarea, input, select, .button{
 .icon-arrow-right svg {
   width: 30px;
 }
-button.theme-small,
-button.theme-large {
+.button {
   display: inline-block;
   -webkit-mask-size: cover;
   mask-size: cover;
-  color: #ffffff;
+  color: #ffffff !important;
+  cursor: pointer;
 }
-button.theme-large {
+.button.theme-large {
   width: 195px;
   height: 48px;
   -webkit-mask: url(../images/button-large.svg) no-repeat 50% 50%;
@@ -174,7 +177,7 @@ button.theme-large {
   -webkit-mask-size: cover;
   mask-size: cover;
 }
-button.theme-small {
+.button.theme-small {
   width: 120px;
   height: 36px;
   -webkit-mask: url(../images/button-small.svg) no-repeat 50% 50%;
@@ -214,7 +217,7 @@ button.theme-small {
 .widget.story svg path{
   fill: #b71234;
 }
-.widget.story button{
+.widget.story .button {
   background-color: #b71234;
 }
 .widget.itinerary .title,
@@ -224,7 +227,7 @@ button.theme-small {
 .widget.itinerary svg path{
   fill: #165788;
 }
-.widget.itinerary button{
+.widget.itinerary .button{
   background-color: #165788;
 }
 .widget.deal .title,
@@ -234,7 +237,7 @@ button.theme-small {
 .widget.deal svg path{
   fill: #eeaf30;
 }
-.widget.deal button{
+.widget.deal .button{
   background-color: #eeaf30;
 }
 .widget.event .title,
@@ -244,7 +247,7 @@ button.theme-small {
 .widget.event svg path{
   fill: #90986b;
 }
-.widget.event button{
+.widget.event .button{
   background-color: #90986b;
 }
 .widget.event .date{

@@ -102,12 +102,12 @@
       </ul>
       <div id="highlights" ng-style="imagewrapper" class="columns-9">
         <ul ng-style="listposition">
-          <li ng-repeat="story in stories | filter:{featured:'true'}" ng-style="imagewrapper">
+          <li ng-repeat="story in stories | filter:{featured:'true'} | orderBy:'rank'" ng-style="imagewrapper">
             <div ng-if="story.youtube" class="fluidmedia">
               <iframe width="960" height="405" ng-src="{{ youtubeURL + story.youtube + youtubeOptions }}" frameborder="0" allowfullscreen></iframe>
             </div>
             <img ng-if="!story.youtube" ng-src="{{ imageURL + story.image }}" />
-            <p class="caption"><strong>{{ story.title }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
+            <p class="caption"><strong>{{ story.rank }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
           </li>
         </ul>
       </div>
@@ -117,13 +117,13 @@
 
     <div class="wrapper">
       <ul class="block-grid-3">
-        <li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1" >
+        <li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1 | orderBy:'rank'" >
           <a title="Continue Reading..." href="" ng-href="{{ story.URL }}" class="widget {{ story.type }}">
             <h4 class="title"><span class="icon-arrow-left" ng-include="'/images/icon-arrow-left.svg'"></span>{{ story.type }}<span class="icon-arrow-right" ng-include="'/images/icon-arrow-right.svg'"></span></h4>
             <img ng-src="{{ imageURL + story.image }}">
             <h3 class="subhead">{{ story.title }}</h3>
-            <p class="caption">{{ story.caption | limitTo:100 }}...</p> 
-            <button class="theme-small" type="button">read more</button>
+            <p class="caption">{{ story.caption | limitTo:140 }}...</p> 
+            <button class="button theme-small" ng-href="{{ story.URL }}" >read more</button>
           </a>
         </li>
       </ul>
