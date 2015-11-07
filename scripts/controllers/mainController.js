@@ -116,7 +116,7 @@ app.controller("StoriesController", function($scope) {
 	
 	// slideshow size
 	var wrapper = angular.element(document.querySelector("#highlights"));
-	var imageWidth = wrapper[0].clientWidth;
+	var imageWidth = wrapper[0].offsetWidth;
 	var galleryWidth = imageWidth * $scope.stories.length;
 	
 	$scope.imagewrapper = { width: imageWidth + "px" };
