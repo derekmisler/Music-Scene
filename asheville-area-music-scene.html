@@ -83,7 +83,7 @@
 <link href="/css/music.css" rel="stylesheet" media="all" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="/scripts/controllers/mainController.js"></script>
-<div ng-app="musicApp">
+<div id="music" ng-app="musicApp">
   <div class="container" ng-controller="StoriesController">
     <div class="wrapper">
       <div class="columns-12 intro">
@@ -102,7 +102,7 @@
       </ul>
       <div id="highlights" ng-style="imagewrapper" class="columns-9">
         <ul ng-style="listposition">
-          <li ng-repeat="story in stories | filter:{featured:'true'} | orderBy:'rank'" ng-style="imagewrapper">
+          <li ng-repeat="story in stories | filter:{featured:'true'}" ng-style="imagewrapper">
             <div ng-if="story.youtube" class="fluidmedia">
               <iframe width="960" height="405" ng-src="{{ youtubeURL + story.youtube + youtubeOptions }}" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -117,7 +117,7 @@
 
     <div class="wrapper">
       <ul class="block-grid-3">
-        <li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1 | orderBy:'rank'" >
+        <li ng-repeat="story in stories | filter:{featured:false} | limitTo:6:1" >
           <a title="Continue Reading..." href="" ng-href="{{ story.URL }}" class="widget {{ story.type }}">
             <h4 class="title"><span class="icon-arrow-left" ng-include="'/images/icon-arrow-left.svg'"></span>{{ story.type }}<span class="icon-arrow-right" ng-include="'/images/icon-arrow-right.svg'"></span></h4>
             <img ng-src="{{ imageURL + story.image }}">

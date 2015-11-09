@@ -15,8 +15,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/iconic-asheville/music-heritage/",
       subhead: "Making Music in the Blue Ridge Mountains",
       featured: true,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "Buskers",
@@ -25,8 +24,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/see-do/music/",
       subhead: "Subhead",
       featured: true,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "The Orange Peel",
@@ -35,8 +33,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/see-do/music/",
       subhead: "Subhead",
       featured: true,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "Street Scene",
@@ -54,8 +51,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/iconic-asheville/music-heritage/",
       subhead: "Learn more about Asheville's music scene.",
       featured: false,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "Shopping",
@@ -64,8 +60,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/see-do/music/music-shopping/",
       subhead: "Check out Asheville music stores.",
       featured: false,
-      type: "deal",
-      rank: ""
+      type: "deal"
     },
     {
       title: "Evolution of Mountain Music",
@@ -74,8 +69,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/iconic-asheville/music-heritage/",
       subhead: "Learn more about Asheville's music history.",
       featured: false,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "Music Itineraries",
@@ -84,8 +78,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/music-scene/itineraries/",
       subhead: "Check out recommended music itineraries.",
       featured: false,
-      type: "itinerary",
-      rank: ""
+      type: "itinerary"
     },
     {
       title: "Listen/Watch",
@@ -94,8 +87,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/see-do/music/music-venues/",
       subhead: "View Asheville music videos.",
       featured: false,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "Festivals",
@@ -104,8 +96,7 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/see-do/music/music-festivals/",
       subhead: "See upcoming music festivals in Asheville.",
       featured: false,
-      type: "story",
-      rank: ""
+      type: "story"
     },
     {
       title: "Venues",
@@ -114,27 +105,40 @@ app.controller("StoriesController", function($scope) {
       URL: "http://www.exploreasheville.com/see-do/music/music-venues/",
       subhead: "Find out where to see live music.",
       featured: true,
-      type: "story",
-      rank: ""
+      type: "story"
     }
   ];
 
   // Random sorting
-  angular.forEach($scope.stories, function() {
-    $scope.stories.push({
-      rank: Math.random() * 100
-    });
-  });
+  // -> Fisher–Yates shuffle algorithm
+  var shuffleArray = function(array) {
+    var m = array.length, t, i;
 
-  // featured and URL strings
+    // While there remain elements to shuffle
+    while (m) {
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+
+      // And swap it with the current element.
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+
+    return array;
+  }
+  shuffleArray($scope.stories);
+
+  
+  // URL strings
   $scope.imageURL = "/images/";
   $scope.youtubeURL = "https://www.youtube.com/embed/";
   $scope.youtubeOptions = "?rel=0&amp;showinfo=0";
 
   // slideshow size
-  var wrapper = angular.element(document.querySelector("#highlights"));
-  var imageWidth = wrapper[0].offsetWidth;
-  var galleryWidth = imageWidth * $scope.stories.length;
+  var wrapper = angular.element(document.querySelector("#highlights")),
+      imageWidth = wrapper[0].offsetWidth,
+      galleryWidth = imageWidth * $scope.stories.length;
 
   $scope.imagewrapper = { width: imageWidth + "px" };
   $scope.listposition = { width: galleryWidth + "px" };

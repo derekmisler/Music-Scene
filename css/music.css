@@ -1,63 +1,62 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+#music h1,
+#music h2,
+#music h3,
+#music h4,
+#music h5,
+#music h6{
   font-family: 'Lato', Helvetica, Arial, Verdana;
   font-weight: 700 !important;
   line-height: initial;
   text-transform: capitalize;
   color: #b71234;
 }
-br.clear {
+#music br.clear {
   line-height: 2rem;
 }
 
-h1{
+#music h1{
   font-size: 3rem;				/* 48/16 */
 }
-h2{
+#music h2{
   font-weight: 300 !important;
   font-size: 3.125rem;			/* 50/16 */
 }
-h2.alternate{
+#music h2.alternate{
   font-size: 5rem !important;		/* 80/16 */
 }
-h3{
+#music h3{
   font-size: 1.25rem;				/* 20/16 */
 }
-h4{
+#music h4{
   font-size: 1.25rem;				/* 20/16 */
   font-style: italic;
 }
-h5{
+#music h5{
   font-size: 1.75rem;				/* 28/16 */
 }
-h6{
+#music h6{
   font-size: 4.8125rem;			/* 77/16 */
   font-style: italic;
 }
 
-.intro p{
+#music .intro p{
   font-size: 1.25rem;				/* 20/16 */
 }
-button, textarea, input, select, .button{
+#music button, #music textarea, #music input, #music select, #music .button{
   border-radius: 0 !important;
   outline: 0 !important;
   background-color: transparent;
   border: none !important;
 }
-.container a{
+#music a{
   color: #165788;
 }
-}
 /*----------------------------button tabs------------------------------*/
-.container {
+#music .container {
   opacity: 0;
   transition: opacity .5s cubic-bezier(0.35, 0, 0.25, 1);
 }
-.container.ng-scope{
+#music .ng-scope{
   opacity: 1;
 }
 #highlightsWrapper {
@@ -152,8 +151,8 @@ button, textarea, input, select, .button{
 
 /*----------------------------widgets------------------------------*/
 
-.icon-arrow-left,
-.icon-arrow-right {
+#music .icon-arrow-left,
+#music .icon-arrow-right {
   display: inline-block;
   vertical-align: middle;
   width: 40px;
@@ -162,14 +161,14 @@ button, textarea, input, select, .button{
 .icon-arrow-right svg {
   width: 30px;
 }
-.button {
+#music .button {
   display: inline-block;
   -webkit-mask-size: cover;
   mask-size: cover;
   color: #ffffff !important;
   cursor: pointer;
 }
-.button.theme-large {
+#music .button.theme-large {
   width: 195px;
   height: 48px;
   -webkit-mask: url(../images/button-large.svg) no-repeat 50% 50%;
@@ -177,7 +176,7 @@ button, textarea, input, select, .button{
   -webkit-mask-size: cover;
   mask-size: cover;
 }
-.button.theme-small {
+#music .button.theme-small {
   width: 120px;
   height: 36px;
   -webkit-mask: url(../images/button-small.svg) no-repeat 50% 50%;
@@ -185,12 +184,12 @@ button, textarea, input, select, .button{
   -webkit-mask-size: cover;
   mask-size: cover;
 }
-.widget{
+#music .widget{
   margin: 0 0 0 0;
   position: relative;
   display: block;
 }
-.widget .title{
+#music .widget .title{
   text-align: center;
   height: 2.5rem;
   text-transform: lowercase;
@@ -198,59 +197,59 @@ button, textarea, input, select, .button{
   padding: .5rem 0;
   margin: 0;
 }
-.widget img{
+#music .widget img{
   max-width: 100%;
   margin: 0 0 .5rem 0;
 }
-.widget .subhead{
+#music .widget .subhead{
   padding: .5rem 0 0 0;
 }
-.widget .caption{
+#music .widget .caption{
   font-size: .875rem;
   color: #766a65;
   font-style: italic;
 }
-.widget.story .title,
-.widget.story .subhead{
+#music .widget.story .title,
+#music .widget.story .subhead{
   color: #b71234;
 }
-.widget.story svg path{
+#music .widget.story svg path{
   fill: #b71234;
 }
-.widget.story .button {
+#music .widget.story .button {
   background-color: #b71234;
 }
-.widget.itinerary .title,
-.widget.itinerary .subhead{
+#music .widget.itinerary .title,
+#music .widget.itinerary .subhead{
   color: #165788;
 }
-.widget.itinerary svg path{
+#music .widget.itinerary svg path{
   fill: #165788;
 }
-.widget.itinerary .button{
+#music .widget.itinerary .button{
   background-color: #165788;
 }
-.widget.deal .title,
-.widget.deal .subhead{
+#music .widget.deal .title,
+#music .widget.deal .subhead{
   color: #eeaf30;
 }
-.widget.deal svg path{
+#music .widget.deal svg path{
   fill: #eeaf30;
 }
-.widget.deal .button{
+#music .widget.deal .button{
   background-color: #eeaf30;
 }
-.widget.event .title,
-.widget.event .subhead{
+#music .widget.event .title,
+#music .widget.event .subhead{
   color: #90986b;
 }
-.widget.event svg path{
+#music .widget.event svg path{
   fill: #90986b;
 }
-.widget.event .button{
+#music .widget.event .button{
   background-color: #90986b;
 }
-.widget.event .date{
+#music .widget.event .date{
   color: #ffffff;
   display: block;
   position: absolute;
@@ -258,23 +257,13 @@ button, textarea, input, select, .button{
   left: 0;
   margin-top: -1px;
 }
-.widget.event .date .day{
+#music .widget.event .date .day{
   padding: .25rem;
   background-color: #90986b;
 }
-.widget.event .date .month{
+#music .widget.event .date .month{
   padding: .25rem;
   background-color: #766a65;
-}
-
-/*----------------------------SoundCloud------------------------------*/
-
-#soundcloudPlayer .g-shadow-inset{
-  box-shadow: none !important;
-}
-#soundcloudPlayer .widget{
-  border-radius: 0 !important;
-  border: 0 !important;
 }
 
 /*----------------------------Angular------------------------------*/
