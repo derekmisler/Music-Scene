@@ -107,7 +107,7 @@
               <iframe width="960" height="405" ng-src="{{ youtubeURL + story.youtube + youtubeOptions }}" frameborder="0" allowfullscreen></iframe>
             </div>
             <img ng-if="!story.youtube" ng-src="{{ imageURL + story.image }}" />
-            <p class="caption"><strong>{{ story.rank }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
+            <p class="caption"><strong>{{ story.title }}</strong><br />{{ story.caption }}<br /><a ng-href="{{ story.URL }}">{{ story.subhead }}</a></p>
           </li>
         </ul>
       </div>
