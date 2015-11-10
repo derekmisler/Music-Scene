@@ -167,16 +167,16 @@
 #music .button.theme-large {
   width: 195px;
   height: 48px;
-  -webkit-mask: url(https://cdn.rawgit.com/derekmisler/Music-Scene/master/images/button-large.svg) no-repeat 50% 50%;
-  mask: url(https://cdn.rawgit.com/derekmisler/Music-Scene/master/images/button-large.svg)) no-repeat 50% 50%;
+  -webkit-mask: url(../images/button-large.svg) no-repeat 50% 50%;
+  mask: url(../images/button-large.svg)) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
 }
 #music .button.theme-small {
   width: 120px;
   height: 36px;
-  -webkit-mask: url(https://cdn.rawgit.com/derekmisler/Music-Scene/master/images/button-small.svg) no-repeat 50% 50%;
-  mask: url(https://cdn.rawgit.com/derekmisler/Music-Scene/master/images/button-small.svg)) no-repeat 50% 50%;
+  -webkit-mask: url(../images/button-small.svg) no-repeat 50% 50%;
+  mask: url(../images/button-small.svg)) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
 }

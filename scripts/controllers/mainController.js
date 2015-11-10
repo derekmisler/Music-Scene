@@ -131,7 +131,7 @@ app.controller("StoriesController", function($scope, $window) {
 
   
   // URL strings
-  $scope.imageURL = "https://cdn.rawgit.com/derekmisler/Music-Scene/master/images/";
+  $scope.imageURL = "/images/";
   $scope.youtubeURL = "https://www.youtube.com/embed/";
   $scope.youtubeOptions = "?rel=0&amp;showinfo=0";
 
