@@ -5,7 +5,7 @@ var app = angular.module("musicApp", []).config(function($sceProvider) {
 });
 
 // bottom stories
-app.controller("StoriesController", function($scope) {
+app.controller("StoriesController", function($scope, $window) {
   $scope.stories =
   [
     {
@@ -22,7 +22,7 @@ app.controller("StoriesController", function($scope) {
       image: "flat-iron.jpg",
       caption: "Lorem ipsum dolor sit amet, vis elit minim molestie ei, eu nobis legendos qui. Quo at legendos lobortis assueverit, illud impedit ponderum ne mei. Has modus labore democritum ad, mea in probo dicunt, quis quaerendum vim an. Ei est fierent noluisse menandri.",
       URL: "http://www.exploreasheville.com/see-do/music/",
-      subhead: "Subhead",
+      subhead: "Buskers Subhead",
       featured: true,
       type: "story"
     },
@@ -31,7 +31,7 @@ app.controller("StoriesController", function($scope) {
       image: "orange-peel.jpg",
       caption: "Lorem ipsum dolor sit amet, vis elit minim molestie ei, eu nobis legendos qui. Quo at legendos lobortis assueverit, illud impedit ponderum ne mei. Has modus labore democritum ad, mea in probo dicunt, quis quaerendum vim an. Ei est fierent noluisse menandri.",
       URL: "http://www.exploreasheville.com/see-do/music/",
-      subhead: "Subhead",
+      subhead: "Learn more about the Orange Peel",
       featured: true,
       type: "story"
     },
@@ -40,7 +40,7 @@ app.controller("StoriesController", function($scope) {
       image: "pack-square-singing.jpg",
       caption: "Lorem ipsum dolor sit amet, vis elit minim molestie ei, eu nobis legendos qui. Quo at legendos lobortis assueverit, illud impedit ponderum ne mei. Has modus labore democritum ad, mea in probo dicunt, quis quaerendum vim an. Ei est fierent noluisse menandri.",
       URL: "http://www.exploreasheville.com/see-do/music/",
-      subhead: "Subhead",
+      subhead: "Street Scene Subhead",
       featured: true,
       type: "story"
     },
@@ -116,7 +116,7 @@ app.controller("StoriesController", function($scope) {
 
     // While there remain elements to shuffle
     while (m) {
-      // Pick a remaining element…
+      // Pick a remaining element...
       i = Math.floor(Math.random() * m--);
 
       // And swap it with the current element.
@@ -137,18 +137,22 @@ app.controller("StoriesController", function($scope) {
 
   // slideshow size
   var wrapper = angular.element(document.querySelector("#highlights")),
+      window = angular.element($window),
       imageWidth = wrapper[0].offsetWidth,
       galleryWidth = imageWidth * $scope.stories.length;
 
   $scope.imagewrapper = { width: imageWidth + "px" };
   $scope.listposition = { width: galleryWidth + "px" };
-
+  $scope.selected = 0;
   // Scroll to appropriate position based on image index and width
   $scope.scrollTo = function(slide,index) {
     var newMargin = imageWidth * index;
+    $scope.selected = index;
+    
     $scope.listposition = {
       margin:("0 0 0 " + -newMargin + "px"),
       width: galleryWidth + "px"
     };
   };
 });
+
