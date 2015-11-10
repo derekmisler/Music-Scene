@@ -145,7 +145,7 @@ app.controller("StoriesController", function($scope, $window) {
   $scope.listposition = { width: galleryWidth + "px" };
   $scope.selected = 0;
   // Scroll to appropriate position based on image index and width
-  $scope.scrollTo = function(slide,index) {
+  $scope.scrollTo = function(index) {
     var newMargin = imageWidth * index;
     $scope.selected = index;
     

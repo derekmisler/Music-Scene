@@ -135,9 +135,7 @@
 	padding-top: 0.525rem;
   height: 0;
 }
-.fluidmedia iframe,
-.fluidmedia embed,
-.fluidmedia object {
+.fluidmedia iframe {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;

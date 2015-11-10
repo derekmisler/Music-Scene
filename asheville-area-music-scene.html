@@ -52,7 +52,7 @@
     <div class="wrapper" id="highlightsWrapper">
       <ul class="nav">
         <li ng-repeat="story in stories | filter:{featured:'true'}">
-          <a ng-href="" ng-click="scrollTo(story,$index)" ng-class="{sel: $index == selected}"></a>
+          <a ng-href="" ng-click="scrollTo($index)" ng-class="{sel: $index == selected}"></a>
         </li>
       </ul>
       <div id="highlights" ng-style="imagewrapper">
