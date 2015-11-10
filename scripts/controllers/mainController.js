@@ -111,23 +111,22 @@ app.controller("StoriesController", function($scope, $window) {
 
   // Random sorting
   // -> Fisher–Yates shuffle algorithm
-  var shuffleArray = function(array) {
-    var m = array.length, t, i;
-
+  var shuffleStories = function(stories) {
+    var storiesTotal = stories.length,
+        holdVar,
+        i;
     // While there remain elements to shuffle
-    while (m) {
+    while (storiesTotal) {
       // Pick a remaining element...
-      i = Math.floor(Math.random() * m--);
-
+      i = Math.floor(Math.random() * storiesTotal--);
       // And swap it with the current element.
-      t = array[m];
-      array[m] = array[i];
-      array[i] = t;
+      holdVar = stories[storiesTotal];
+      stories[storiesTotal] = stories[i];
+      stories[i] = holdVar;
     }
-
-    return array;
+    return stories;
   }
-  shuffleArray($scope.stories);
+  shuffleStories($scope.stories);
 
   
   // URL strings
